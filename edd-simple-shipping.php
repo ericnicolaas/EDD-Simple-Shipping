@@ -579,7 +579,7 @@ class EDD_Simple_Shipping {
 	 */
 	public function remove_shipping_fees() {
 
-		$fees = EDD()->fees->get_fees( 'fee' );
+		$fees = EDD()->fees->get_fees( 'all' );
 		if( empty( $fees ) ) {
 			return;
 		}
